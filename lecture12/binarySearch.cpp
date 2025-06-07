@@ -4,9 +4,6 @@ using namespace std;
 int binarySearch(int arr[], int length, int key){
     int start = 0;
     int end = length - 1;
-
-    // int mid = start + (end-start)/2;
-
     while(start <= end){
 
         int mid = start + (end - start)/2;
@@ -21,8 +18,6 @@ int binarySearch(int arr[], int length, int key){
         else{
             end = mid-1;
         }
-
-        
     }
     return -1;
 }
